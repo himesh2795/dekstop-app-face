@@ -1,14 +1,13 @@
 import tkinter
+import face_recognition
+import cv2
+import numpy as np
 
 master = tkinter.Tk()
 master.title("Face Recognition")
 
 
 def run():
-    import face_recognition
-    import cv2
-    import numpy as np
-
     video_capture = cv2.VideoCapture(0)
 
     while True:
